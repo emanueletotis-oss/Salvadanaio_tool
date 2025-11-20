@@ -1,1 +1,1 @@
-self.addEventListener("install",e=>{e.waitUntil(caches.open("piggy-cache").then(cache=>{return cache.addAll(["index.html","style.css","script.js","manifest.json","icon.png"]);}));});self.addEventListener("fetch",e=>{e.respondWith(caches.match(e.request).then(resp=>resp||fetch(e.request)));});
+// Empty service worker

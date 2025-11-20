@@ -1,1 +1,29 @@
-<!DOCTYPE html><html lang="it"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Salvadanai</title><link rel="stylesheet" href="style.css"><link rel="manifest" href="manifest.json"><script>if("serviceWorker" in navigator){navigator.serviceWorker.register("service-worker.js");}</script></head><body><h1>I miei salvadanai</h1><div id="piggy-list"></div><button id="new-btn">Nuovo salvadanaio</button><div id="detail-screen" class="hidden"><h2 id="detail-title"></h2><p id="detail-total"></p><button id="add-btn">Aggiungi soldi</button><button id="remove-btn">Rimuovi soldi</button><button id="rename-btn">Rinomina</button><button id="back-btn">Indietro</button></div><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Salvadanaio Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>I miei salvadanai</h1>
+  <div id="piggyList"></div>
+
+  <button id="newPiggy" class="new-piggy">➕ Nuovo salvadanaio</button>
+
+  <div id="piggyDetail" class="hidden">
+    <h2 id="piggyTitle"></h2>
+    <p id="piggyTotal"></p>
+
+    <div class="actions">
+      <button class="action-btn" onclick="modifyAmount(true)">Aggiungi soldi</button>
+      <button class="action-btn" onclick="modifyAmount(false)">Rimuovi soldi</button>
+      <button class="action-btn" onclick="renamePiggy()">Rinomina</button>
+      <button class="action-btn" onclick="changeColor()">Cambia colore</button>
+      <button class="action-btn" onclick="back()">Indietro</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
