@@ -1,3 +1,9 @@
 {
-  "name": "Salvadanaio_tool_v3"
+  "name": "Salvadanaio Tool",
+  "short_name": "Salvadanaio",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "icons": []
 }
